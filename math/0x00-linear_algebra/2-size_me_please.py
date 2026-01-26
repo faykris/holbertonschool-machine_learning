@@ -12,5 +12,6 @@ def matrix_shape(matrix):
     :param matrix: array double
     :return: size of the matrix
     """
-    return np.ndarray.ahape(matrix)
+    arr = np.array(matrix)
+    return list(arr.shape)
 
