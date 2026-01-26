@@ -12,3 +12,4 @@ def matrix_shape(matrix):
     :return: size of the matrix
     """
     return np.shape(matrix)
+
