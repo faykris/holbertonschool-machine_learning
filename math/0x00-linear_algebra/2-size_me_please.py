@@ -11,4 +11,3 @@ def matrix_shape(matrix):
     :return: size of the matrix
     """
     return numpy.shape(matrix)
-
