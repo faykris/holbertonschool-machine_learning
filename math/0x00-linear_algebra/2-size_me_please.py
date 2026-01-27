@@ -6,5 +6,17 @@
 
 def matrix_shape(matrix):
     """size of the matrix"""
-    return list(matrix)
+    shape = [len(matrix)]
+
+    for i in matrix:
+        if list is type(i):
+            shape.append(len(i))
+            for j in i:
+                if list is type(j):
+                    shape.append(len(j))
+                break
+        else:
+            shape.append(i)
+        break
+    return shape
 
