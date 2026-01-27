@@ -6,10 +6,11 @@
 
 def recursive_shape(matrix, shape):
     """Return shape with recursion"""
-    if list is type(matrix):
+    try:
         shape.append(len(matrix))
         return recursive_shape(matrix[0], shape)
-    return shape
+    except TypeError:
+        return shape
 
 
 def matrix_shape(matrix):
