@@ -13,6 +13,10 @@ def matrix_shape(matrix):
             for j in i:
                 if list is type(j):
                     shape.append(len(j))
+                    for k in j:
+                        if list is type(k):
+                            shape.append(len(k))
+                        break
                 break
         break
     return shape
