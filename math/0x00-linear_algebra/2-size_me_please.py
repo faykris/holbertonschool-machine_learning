@@ -4,20 +4,15 @@
 """
 
 
+def recursive_shape(matrix, shape):
+    """Return shape with recursion"""
+    if list is type(matrix):
+        shape.append(len(matrix))
+        return recursive_shape(matrix[0], shape)
+    return shape
+
+
 def matrix_shape(matrix):
     """size of the matrix"""
-    shape = [len(matrix)]
-    for i in matrix:
-        if list is type(i):
-            shape.append(len(i))
-            for j in i:
-                if list is type(j):
-                    shape.append(len(j))
-                    for k in j:
-                        if list is type(k):
-                            shape.append(len(k))
-                        break
-                break
-        break
-    return shape
+    return recursive_shape(matrix, [])
 
